@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav-container">
+    <a class="logo" href="index.html">
+      <img src="img/Logo.png" alt="Logo">
+      <span>Portfolio</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Главная</a></li>
+        <li><a href="about.html" class="nav-link">О себе</a></li>
+        <li><a href="projects.html" class="nav-link">Проекты</a></li>
+        <li><a href="contact.html" class="nav-link active">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="controls">
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Сменить тему">
+        <img id="theme-icon" src="img/sun100.png" alt="Светлая тема">
+      </button>
+      <button id="burger" class="icon-btn" type="button" aria-label="Открыть меню">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Меню">
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container narrow">
+      <h1>Контакты</h1>
+      <p>Форма обратной связи и ссылки для связи со мной.</p>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="container contact-layout">
+      <div class="card-block text-left">
+        <h2>Форма обратной связи</h2>
+        <form class="contact-form" id="contact-form">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="6" placeholder="Введите сообщение" required></textarea>
+
+          <button class="details-btn" type="submit">Отправить</button>
+        </form>
+      </div>
+
+      <div class="card-block text-left">
+        <h2>Контактная информация</h2>
+        <p><strong>Email:</strong> <a href="mailto:mansyrmynzasarov7@gmail.com">mansyrmynzasarov7@gmail.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/DanteDept" target="_blank" rel="noopener noreferrer">github.com/DanteDept</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span class="current-year">2026</span> DanteDept</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

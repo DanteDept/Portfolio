@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои проекты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav-container">
+    <a class="logo" href="index.html">
+      <img src="img/Logo.png" alt="Logo">
+      <span>Portfolio</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Главная</a></li>
+        <li><a href="about.html" class="nav-link">О себе</a></li>
+        <li><a href="projects.html" class="nav-link active">Проекты</a></li>
+        <li><a href="contact.html" class="nav-link">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="controls">
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Сменить тему">
+        <img id="theme-icon" src="img/sun100.png" alt="Светлая тема">
+      </button>
+      <button id="burger" class="icon-btn" type="button" aria-label="Открыть меню">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Меню">
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container narrow">
+      <h1>Мои проекты</h1>
+      <p>Несколько работ, связанных с играми, графикой и программированием.</p>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="container">
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="img/Preview.gis.gif" alt="Pixel-Art ассеты">
+          <div class="project-content text-left">
+            <h3>Pixel-Art ассеты</h3>
+            <p>Набор собственных спрайтов и анимаций для 2D-проектов. Используемые технологии: Aseprite, графические редакторы, игровые пайплайны для интеграции в Unity.</p>
+            <p><a href="#">Ссылка на проект</a></p>
+            <p><a href="https://github.com/DanteDept" target="_blank" rel="noopener noreferrer">Ссылка на репозиторий</a></p>
+            <button class="details-btn" type="button">Подробнее</button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="img/bsp_tree_room_paths.gif" alt="Тестовый проект">
+          <div class="project-content text-left">
+            <h3>Тестовый проект</h3>
+            <p>Эксперимент с процедурной генерацией комнат, путей и спавна персонажа. Используемые технологии: C#, Unity, алгоритмы генерации контента.</p>
+            <p><a href="#">Ссылка на проект</a></p>
+            <p><a href="https://github.com/DanteDept" target="_blank" rel="noopener noreferrer">Ссылка на репозиторий</a></p>
+            <button class="details-btn" type="button">Подробнее</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal alt-section">
+    <div class="container narrow text-left card-block">
+      <h2>Будущие проекты</h2>
+      <ul class="info-list">
+        <li>Полноценная 2D-инди-игра с собственным визуальным стилем и механиками исследования.</li>
+        <li>Персональный сайт-портфолио с расширенной страницей работ и блогом разработки.</li>
+        <li>Небольшой веб-проект для публикации игровых ассетов и демонстрации навыков фронтенда.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span class="current-year">2026</span> DanteDept</p>
+</footer>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-content">
+    <span class="close" id="close-modal">&times;</span>
+    <h3 id="modal-title"></h3>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

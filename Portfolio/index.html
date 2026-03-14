@@ -11,29 +11,26 @@
 <header class="header">
   <div class="container nav-container">
 
-    <div class="logo">
-      <img src="/img/Logo.png" alt="Logo">
+    <a class="logo" href="index.html">
+      <img src="img/Logo.png" alt="Logo">
       <span>Portfolio</span>
-    </div>
+    </a>
 
     <nav>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about">Обо мне</a></li>
-        <li><a href="#skills">Навыки</a></li>
-        <li><a href="#projects">Проекты</a></li>
-        <li><a href="#contact">Контакты</a></li>
+        <li><a href="index.html" class="nav-link active">Главная</a></li>
+        <li><a href="about.html" class="nav-link">О себе</a></li>
+        <li><a href="projects.html" class="nav-link">Проекты</a></li>
+        <li><a href="contact.html" class="nav-link">Контакты</a></li>
       </ul>
     </nav>
 
     <div class="controls">
-
-      <button id="theme-toggle" class="icon-btn">
-        <img id="theme-icon"
-             src="/img/sun100.png"
-             alt="Светлая тема">
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Сменить тему">
+        <img id="theme-icon" src="img/sun100.png" alt="Светлая тема">
       </button>
 
-      <button id="burger" class="icon-btn">
+      <button id="burger" class="icon-btn" type="button" aria-label="Открыть меню">
         <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Меню">
       </button>
     </div>
@@ -41,83 +38,89 @@
   </div>
 </header>
 
-<section class="hero">
-  <div class="container">
-    <h1>Game Developer / CS Student</h1>
-    <p>Изучаю C++, C#, Unity и учусь создавать собственные инди-проекты с pixel-art</p>
-  </div>
-</section>
-
-<section id="about" class="section reveal">
-  <div class="container">
-    <h2>Обо мне</h2>
-    <p>
-      Я Мансур, студент направления Computer Science в университете им.Торайгырова. Изучаю алгоритмы, структуры данных, принципы объектно-ориентированного программирования и архитектуру программного обеспечения. Основной язык разработки — C++, использую его для понимания низкоуровневых процессов и производительного кода. Также работаю с C# и Unity, создавая игровые механики и прототипы.
-    </p>
-    <p>
-      Параллельно развиваюсь как начинающий pixel-art художник, создаю спрайты и анимации для собственных проектов. Сейчас работаю над инди-проектом, проходя полный цикл разработки: от идеи и прототипа до готового игрового продукта.
-    </p>
-  </div>
-</section>
-
-<section id="skills" class="section reveal">
-  <div class="container">
-    <h2>Навыки</h2>
-    <div class="skills-grid">
-      <div class="skill">
-        <img src="/img/cpp.png" alt="C++">
-        <h3>C++</h3>
-      </div>
-      <div class="skill">
-        <img src="/img/ch.png" alt="C#">
-        <h3>C#</h3>
-      </div>
-      <div class="skill">
-        <img src="/img/unity.png" alt="Unity">
-        <h3>Unity</h3>
-      </div>
-      <div class="skill">
-        <img src="/img/pixel-art.png" alt="Pixel-Art">
-        <h3>Pixel-Art</h3>
-      </div>
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Game Developer / CS Student</h1>
+      <p>Изучаю C++, C#, Unity и учусь создавать собственные инди-проекты с pixel-art</p>
+      <a class="details-btn" href="projects.html">Смотреть проекты</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="projects" class="section reveal">
-  <div class="container">
-    <h2>Проекты</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <img src="/img/Preview.gis.gif" alt="Проект 1">
-        <div class="project-content">
-          <h3>Pixel-Art Ассеты</h3>
-          <p>Множество спрайтов и анимаций в стиле pixel-art</p>
-          <button class="details-btn">Подробнее</button>
+  <section id="about" class="section reveal">
+    <div class="container narrow">
+      <h2>Обо мне</h2>
+      <p>
+        Я Мансур, студент направления Computer Science в университете им. Торайгырова. Изучаю алгоритмы, структуры данных, принципы объектно-ориентированного программирования и архитектуру программного обеспечения. Основной язык разработки — C++, использую его для понимания низкоуровневых процессов и производительного кода. Также работаю с C# и Unity, создавая игровые механики и прототипы.
+      </p>
+      <p>
+        Параллельно развиваюсь как начинающий pixel-art художник, создаю спрайты и анимации для собственных проектов. Сейчас работаю над инди-проектом, проходя полный цикл разработки: от идеи и прототипа до готового игрового продукта.
+      </p>
+      <p class="section-link"><a href="about.html">Подробнее обо мне</a></p>
+    </div>
+  </section>
+
+  <section id="skills" class="section reveal alt-section">
+    <div class="container">
+      <h2>Навыки</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <img src="img/cpp.png" alt="C++">
+          <h3>C++</h3>
         </div>
-      </div>
-      <div class="project-card">
-        <img src="/img/bsp_tree_room_paths.gif" alt="Проект 2">
-        <div class="project-content">
-          <h3>Тестовый проект</h3>
-          <p>Экспериментальный проект с проверкой механик процедрурной генериции и спавна персонажа</p>
-          <button class="details-btn">Подробнее</button>
+        <div class="skill">
+          <img src="img/ch.png" alt="C#">
+          <h3>C#</h3>
+        </div>
+        <div class="skill">
+          <img src="img/unity.png" alt="Unity">
+          <h3>Unity</h3>
+        </div>
+        <div class="skill">
+          <img src="img/pixel-art.png" alt="Pixel-Art">
+          <h3>Pixel-Art</h3>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contact" class="section reveal">
-  <div class="container">
-    <h2>Контакты</h2>
-    <p>Gmail: <a href="mailto:mansyrmynzasarov7@gmail.com">mansyrmynzasarov7@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/DanteDept" target="_blank">github.com/DanteDept</a></p>
-  </div>
-</section>
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <h2>Проекты</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="img/Preview.gis.gif" alt="Проект 1">
+          <div class="project-content">
+            <h3>Pixel-Art ассеты</h3>
+            <p>Множество спрайтов и анимаций в стиле pixel-art для собственных игровых сцен и прототипов.</p>
+            <button class="details-btn" type="button">Подробнее</button>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="img/bsp_tree_room_paths.gif" alt="Проект 2">
+          <div class="project-content">
+            <h3>Тестовый проект</h3>
+            <p>Экспериментальный проект с проверкой механик процедурной генерации и спавна персонажа.</p>
+            <button class="details-btn" type="button">Подробнее</button>
+          </div>
+        </article>
+      </div>
+      <p class="section-link"><a href="projects.html">Открыть страницу всех проектов</a></p>
+    </div>
+  </section>
+
+  <section id="contact" class="section reveal alt-section">
+    <div class="container narrow">
+      <h2>Контакты</h2>
+      <p>Gmail: <a href="mailto:mansyrmynzasarov7@gmail.com">mansyrmynzasarov7@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/DanteDept" target="_blank" rel="noopener noreferrer">github.com/DanteDept</a></p>
+      <p class="section-link"><a href="contact.html">Связаться со мной</a></p>
+    </div>
+  </section>
+</main>
 
 <footer class="footer">
-  <p>© 2026 CS Student Portfolio</p>
+  <p>© <span class="current-year">2026</span> DanteDept</p>
 </footer>
 
 <div class="modal hidden" id="modal">
